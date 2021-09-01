@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!--    <template id="report_patient">-->
+<!--        <t t-call="web.external_layout">-->
+<!--        <t t-call="web.html_container">-->
+<!--            <t t-foreach="docs" t-as="doc">-->
+<!--                <h2>-->
+<!--                    patient card-->
+<!--                </h2>-->
+<!--               Patient Name:  <t t-esc="doc.patient_name"/>-->
+<!--               Patient Age: <t t-esc="doc.patient_age"/>-->
+<!--                Patient Gender: <t t-esc="doc.gender"/>-->
+<!--            </t>-->
+<!--        </t>-->
+<!--        </t>-->
+<!--    </template>-->
+
+    <template id="report_patient">
+
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                    <h2>Patient Card</h2>
+
+                    <table class="table table-sm">
+                        <tr>
+                            <td><strong> Code</strong></td>
+                            <td>
+                             <span t-field="o.name_seq"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Patient Name</strong></td>
+                            <td>
+                                <span t-field="o.patient_name"/>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td><strong>Age</strong></td>
+                            <td>
+                                <span t-field="o.patient_age"/>
+                            </td>
+
+                        </tr>
+                    </table>
+            </div>
+                 </t>
+            </t>
+        </t>
+    </template>
+</odoo>

@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<odoo>
+
+
+    <record id="doctor_tree" model="ir.ui.view">
+            <field name="name">hospital.doctor.tree</field>
+            <field name="model">hospital.doctor</field>
+            <field name="arch" type="xml">
+                <tree string="Doctors">
+                    <field name="doctor_name"/>
+                    <field name="doctor_seq"/>
+                    <field name="user_id"/>
+                    <field name="doctor_age"/>
+                    <field name="gender"/>
+                    <field name="image"/>
+                </tree>
+            </field>
+        </record>
+
+<!--    form view of patient-->
+     <record id="doctor_form" model="ir.ui.view">
+            <field name="name">hospital.doctor.form</field>
+            <field name="model">hospital.doctor</field>
+            <field name="arch" type="xml">
+                <form string="Doctors">
+                    <sheet>
+  
+                        <field name="image" widget="image" class="oe_avatar"/>
+                        <div class="oe_title">
+                        <h1>
+                            <field name="doctor_name" placeholder="Doctor Name"/>
+                        </h1>
+                    </div>
+                        <group>
+                         <h1>
+                             <field name="doctor_seq" readonly="1"/>
+                         </h1>
+                        </group>
+                        <group>
+                        <group>
+                            <field name="doctor_age"/>
+                        </group>
+                        <group>
+                            <field name="gender"/>
+                        </group>
+                            <group>
+                            <field name="user_id"/>
+                        </group>
+                    </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="activity_ids" widget="mail_activity"/>
+                        <field name="message_ids" widget="mail_thread" options="{'post_refresh': 'recipients'}"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+    define seacrh view
+     <record id="hospital_doctor_search" model="ir.ui.view">
+            <field name="name">hospital.doctor.search</field>
+            <field name="model">hospital.doctor</field>
+            <field name="arch" type="xml">
+                <search string="Search doctors">
+                    <field name="doctor_name" filter_domain="['|',('doctor_name','ilike',self),('doctor_seq', 'ilike', self)]"/>
+                </search>
+            </field>
+        </record>
+<!--        </record>-->
+
+<!--       action of doctor menu-->
+    <record id="action_doctor" model="ir.actions.act_window">
+        <field name="name">Doctors</field>
+        <field name="res_model">hospital.doctor</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,kanban,form</field>
+        <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">
+            Create Your First doctor !
+          </p>
+        </field>
+    </record>
+
+
+<!--       menu doctor-->
+         <menuitem id="hospital_doctor" name="Doctors" parent="hospital_root" action="action_doctor" />
+</odoo>
