@@ -20748,3 +20748,158 @@ Traceback (most recent call last):
 psycopg2.InterfaceError: connection already closed
 2021-09-03 08:22:41,325 1 INFO ? odoo.service.server: Initiating shutdown 
 2021-09-03 08:22:41,326 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2021-09-03 08:22:48,326 1 INFO ? odoo: Odoo version 12.0-20210809 
+2021-09-03 08:22:48,328 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2021-09-03 08:22:48,329 1 INFO ? odoo: addons paths: ['/var/lib/odoo/addons/12.0', '/mnt/extra-addons', '/usr/lib/python3/dist-packages/odoo/addons'] 
+2021-09-03 08:22:48,330 1 INFO ? odoo: database: odoo@db:5432 
+2021-09-03 08:22:48,498 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2021-09-03 08:22:48,650 1 INFO ? odoo.service.server: Watching addons folder /var/lib/odoo/addons/12.0 
+2021-09-03 08:22:48,651 1 INFO ? odoo.service.server: Watching addons folder /mnt/extra-addons 
+2021-09-03 08:22:48,652 1 INFO ? odoo.service.server: Watching addons folder /usr/lib/python3/dist-packages/odoo/addons 
+2021-09-03 08:22:49,040 1 INFO ? odoo.service.server: AutoReload watcher running with watchdog 
+2021-09-03 08:22:49,045 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on f5f9339abab1:8069 
+2021-09-03 08:22:57,180 1 INFO ? odoo.http: HTTP Configuring static files 
+2021-09-03 08:22:57,224 1 INFO test odoo.modules.loading: loading 1 modules... 
+2021-09-03 08:22:57,247 1 INFO test odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries 
+2021-09-03 08:22:57,346 1 INFO test odoo.modules.loading: loading 37 modules... 
+2021-09-03 08:22:58,178 1 INFO test odoo.modules.loading: 37 modules loaded in 0.83s, 0 queries 
+2021-09-03 08:22:58,944 1 INFO test odoo.modules.loading: Modules loaded. 
+2021-09-03 08:22:58,974 1 INFO test odoo.addons.base.models.ir_http: Generating routing map 
+2021-09-03 08:22:58,975 1 INFO test odoo.addons.base.models.ir_http: Generating routing map 
+2021-09-03 08:22:59,093 1 INFO test odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['hospital_management'] to user admin #2 via 172.18.0.1 
+2021-09-03 08:22:59,099 1 INFO test odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['hospital_management'] to user admin #2 via 172.18.0.1 
+2021-09-03 08:22:59,101 1 INFO test odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['hospital_management'] to user admin #2 via 172.18.0.1 
+2021-09-03 08:23:02,285 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:02] "GET /web HTTP/1.1" 200 - 468 0.667 2.649
+2021-09-03 08:23:02,885 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:02] "GET /web/webclient/qweb?mods=base,web,bus,web_tour,mail,product,portal,digest,account,account_bank_statement_import,auth_signup,base_import,sales_team,payment,sale,hospital_management,web_settings_dashboard,iap,l10n_generic_coa,l10n_us,mail_bot,partner_autocomplete,payment_transfer,sms,snailmail,web_diagram,web_editor,web_kanban_gauge,web_unsplash HTTP/1.1" 200 - 1 0.002 0.192
+2021-09-03 08:23:02,943 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:02] "POST /web/dataset/call HTTP/1.1" 200 - 13 0.019 0.037
+2021-09-03 08:23:03,087 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:03] "POST /web/webclient/translations HTTP/1.1" 200 - 4 0.006 0.015
+2021-09-03 08:23:03,132 1 INFO ? werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:03] "GET /web/static/src/img/favicon.ico HTTP/1.1" 200 - - - -
+2021-09-03 08:23:03,199 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:03] "POST /web/dataset/call_kw/ir.ui.menu/load_menus HTTP/1.1" 200 - 1 0.001 0.014
+2021-09-03 08:23:03,403 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:03] "GET /web/image?model=res.users&field=image_small&id=2 HTTP/1.1" 304 - 16 0.068 0.047
+2021-09-03 08:23:03,425 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:03] "POST /mail/init_messaging HTTP/1.1" 200 - 53 0.202 0.069
+2021-09-03 08:23:03,527 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:03] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 2 0.009 0.045
+2021-09-03 08:23:03,592 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:03] "POST /web/action/load HTTP/1.1" 200 - 49 0.132 0.144
+2021-09-03 08:23:03,622 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2021-09-03 08:23:03,736 1 INFO test odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user admin #2 via 172.18.0.1 
+2021-09-03 08:23:03,825 1 INFO test odoo.modules.loading: loading 1 modules... 
+2021-09-03 08:23:03,843 1 INFO test odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries 
+2021-09-03 08:23:04,024 1 INFO test odoo.modules.loading: updating modules list 
+2021-09-03 08:23:04,026 1 INFO test odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.18.0.1 
+2021-09-03 08:23:05,881 1 INFO test odoo.modules.loading: loading 37 modules... 
+2021-09-03 08:23:06,421 1 INFO test odoo.modules.registry: module hospital_management: creating or updating database tables 
+2021-09-03 08:23:06,645 1 INFO test odoo.modules.loading: loading hospital_management/data/sequence.xml 
+2021-09-03 08:23:06,663 1 INFO test odoo.modules.loading: loading hospital_management/security/ir.model.access.csv 
+2021-09-03 08:23:06,721 1 INFO test odoo.modules.loading: loading hospital_management/security/security.xml 
+2021-09-03 08:23:07,446 1 INFO test odoo.modules.loading: loading hospital_management/views/patient.xml 
+2021-09-03 08:23:07,614 1 INFO test odoo.modules.loading: loading hospital_management/views/appointment.xml 
+2021-09-03 08:23:07,720 1 INFO test odoo.modules.loading: loading hospital_management/views/doctor.xml 
+2021-09-03 08:23:07,845 1 INFO test odoo.modules.loading: loading hospital_management/reports/report.xml 
+2021-09-03 08:23:07,864 1 INFO test odoo.modules.loading: loading hospital_management/reports/patient_card.xml 
+2021-09-03 08:23:07,976 1 INFO test odoo.modules.loading: Module hospital_management: loading demo 
+2021-09-03 08:23:08,066 1 INFO test odoo.modules.loading: 37 modules loaded in 2.18s, 0 queries 
+2021-09-03 08:23:08,869 1 INFO test odoo.modules.loading: Modules loaded. 
+2021-09-03 08:23:09,073 1 INFO test odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2021-09-03 08:23:09,081 1 INFO test odoo.modules.registry: Registry changed, signaling through the database 
+2021-09-03 08:23:09,087 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:09] "POST /web/dataset/call_button HTTP/1.1" 200 - 2606 2.145 9.755
+2021-09-03 08:23:09,114 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:09] "POST /web/dataset/call_kw/ir.module.module/load_views HTTP/1.1" 200 - 102 0.121 5.373
+2021-09-03 08:23:09,201 1 INFO test odoo.addons.base.models.ir_http: Generating routing map 
+2021-09-03 08:23:09,254 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:09] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.012 0.044
+2021-09-03 08:23:11,982 1 INFO test odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['hospital_management'] to user admin #2 via 172.18.0.1 
+2021-09-03 08:23:11,986 1 INFO test odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['hospital_management'] to user admin #2 via 172.18.0.1 
+2021-09-03 08:23:11,988 1 INFO test odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['hospital_management'] to user admin #2 via 172.18.0.1 
+2021-09-03 08:23:13,970 1 INFO test odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user admin #2 via 172.18.0.1 
+2021-09-03 08:23:14,066 1 INFO test odoo.modules.loading: loading 1 modules... 
+2021-09-03 08:23:14,084 1 INFO test odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries 
+2021-09-03 08:23:14,253 1 INFO test odoo.modules.loading: updating modules list 
+2021-09-03 08:23:14,256 1 INFO test odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.18.0.1 
+2021-09-03 08:23:16,225 1 INFO test odoo.modules.loading: loading 37 modules... 
+2021-09-03 08:23:16,767 1 INFO test odoo.modules.registry: module hospital_management: creating or updating database tables 
+2021-09-03 08:23:16,904 1 INFO test odoo.modules.loading: loading hospital_management/data/sequence.xml 
+2021-09-03 08:23:16,919 1 INFO test odoo.modules.loading: loading hospital_management/security/ir.model.access.csv 
+2021-09-03 08:23:16,962 1 INFO test odoo.modules.loading: loading hospital_management/security/security.xml 
+2021-09-03 08:23:17,677 1 INFO test odoo.modules.loading: loading hospital_management/views/patient.xml 
+2021-09-03 08:23:17,831 1 INFO test odoo.modules.loading: loading hospital_management/views/appointment.xml 
+2021-09-03 08:23:17,931 1 INFO test odoo.modules.loading: loading hospital_management/views/doctor.xml 
+2021-09-03 08:23:18,150 1 INFO test odoo.modules.loading: loading hospital_management/reports/report.xml 
+2021-09-03 08:23:18,169 1 INFO test odoo.modules.loading: loading hospital_management/reports/patient_card.xml 
+2021-09-03 08:23:18,209 1 INFO test odoo.modules.loading: Module hospital_management: loading demo 
+2021-09-03 08:23:18,369 1 INFO test odoo.modules.loading: 37 modules loaded in 2.14s, 0 queries 
+2021-09-03 08:23:19,143 1 INFO test odoo.modules.loading: Modules loaded. 
+2021-09-03 08:23:19,221 1 INFO test odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2021-09-03 08:23:19,229 1 INFO test odoo.modules.registry: Registry changed, signaling through the database 
+2021-09-03 08:23:19,232 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:19] "POST /web/dataset/call_button HTTP/1.1" 200 - 2580 1.678 5.602
+2021-09-03 08:23:19,280 1 INFO test odoo.addons.base.models.ir_http: Generating routing map 
+2021-09-03 08:23:20,691 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:20] "GET /web HTTP/1.1" 200 - 471 0.334 1.082
+2021-09-03 08:23:21,181 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:21] "GET /web/webclient/qweb?mods=base,web,bus,web_tour,mail,product,portal,digest,account,account_bank_statement_import,auth_signup,base_import,sales_team,payment,sale,hospital_management,web_settings_dashboard,iap,l10n_generic_coa,l10n_us,mail_bot,partner_autocomplete,payment_transfer,sms,snailmail,web_diagram,web_editor,web_kanban_gauge,web_unsplash HTTP/1.1" 200 - 1 0.001 0.145
+2021-09-03 08:23:21,283 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:21] "POST /web/dataset/call HTTP/1.1" 200 - 13 0.013 0.025
+2021-09-03 08:23:21,403 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:21] "POST /web/webclient/translations HTTP/1.1" 200 - 6 0.007 0.012
+2021-09-03 08:23:21,481 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:21] "POST /web/dataset/call_kw/ir.ui.menu/load_menus HTTP/1.1" 200 - 1 0.001 0.013
+2021-09-03 08:23:21,611 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:21] "POST /web/dataset/call_kw/res.users/read HTTP/1.1" 200 - 2 0.003 0.029
+2021-09-03 08:23:21,634 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:21] "GET /web/image?model=res.users&field=image_small&id=2 HTTP/1.1" 304 - 15 0.063 0.033
+2021-09-03 08:23:21,657 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:21] "POST /mail/init_messaging HTTP/1.1" 200 - 53 0.136 0.089
+2021-09-03 08:23:21,728 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:21] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 2 0.006 0.016
+2021-09-03 08:23:21,775 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:21] "POST /web/action/load HTTP/1.1" 200 - 40 0.059 0.064
+2021-09-03 08:23:21,913 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:21] "POST /web/dataset/call_kw/hospital.patient/load_views HTTP/1.1" 200 - 54 0.041 0.071
+2021-09-03 08:23:21,989 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:21] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.007 0.010
+2021-09-03 08:23:23,332 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:23] "POST /web/action/load HTTP/1.1" 200 - 23 0.021 0.042
+2021-09-03 08:23:23,421 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:23] "POST /web/dataset/call_kw/hospital.appointment/load_views HTTP/1.1" 200 - 34 0.025 0.047
+2021-09-03 08:23:23,464 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:23] "POST /web/dataset/search_read HTTP/1.1" 200 - 5 0.005 0.006
+2021-09-03 08:23:24,257 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:24] "POST /web/dataset/call_kw/hospital.appointment/default_get HTTP/1.1" 200 - 3 0.003 0.007
+2021-09-03 08:23:24,287 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:24] "POST /web/dataset/call_kw/hospital.appointment/onchange HTTP/1.1" 200 - 1 0.001 0.008
+2021-09-03 08:23:25,614 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:25] "POST /web/dataset/call_kw/hospital.patient/name_search HTTP/1.1" 200 - 3 0.003 0.009
+2021-09-03 08:23:26,461 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:26] "POST /web/dataset/call_kw/hospital.appointment/onchange HTTP/1.1" 200 - 2 0.002 0.013
+2021-09-03 08:23:30,867 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:30] "POST /web/dataset/call_kw/hospital.doctor/name_search HTTP/1.1" 200 - 6 0.006 0.009
+2021-09-03 08:23:39,949 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:39] "POST /web/dataset/call_kw/hospital.appointment/create HTTP/1.1" 200 - 44 0.047 0.105
+2021-09-03 08:23:40,022 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:40] "POST /web/dataset/call_kw/hospital.appointment/read HTTP/1.1" 200 - 18 0.029 0.026
+2021-09-03 08:23:40,121 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:40] "POST /mail/read_followers HTTP/1.1" 200 - 8 0.022 0.023
+2021-09-03 08:23:40,245 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:40] "POST /web/dataset/call_kw/mail.message/message_format HTTP/1.1" 200 - 24 0.073 0.091
+2021-09-03 08:23:40,259 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:40] "GET /web/image/res.partner/3/image_small HTTP/1.1" 200 - 15 0.014 0.028
+2021-09-03 08:23:41,619 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:41] "POST /web/dataset/search_read HTTP/1.1" 200 - 5 0.006 0.012
+2021-09-03 08:23:46,189 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:46] "POST /web/dataset/call_kw/hospital.appointment/read HTTP/1.1" 200 - 14 0.015 0.019
+2021-09-03 08:23:53,626 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:23:53] "POST /longpolling/poll HTTP/1.1" 200 - 12 0.036 50.130
+2021-09-03 08:24:11,800 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:24:11] "POST /longpolling/poll HTTP/1.1" 200 - 12 0.029 50.088
+2021-09-03 08:25:01,911 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:25:01] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.005 50.086
+2021-09-03 08:25:52,007 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:25:52] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.005 50.077
+2021-09-03 08:26:42,126 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:26:42] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.005 50.099
+2021-09-03 08:26:53,270 1 INFO test odoo.addons.base.models.ir_cron: Starting job `Mail: Email Queue Manager`. 
+2021-09-03 08:26:53,375 1 INFO test odoo.addons.base.models.ir_cron: Job `Mail: Email Queue Manager` done. 
+2021-09-03 08:27:32,318 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:27:32] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.005 50.172
+2021-09-03 08:27:49,320 1 INFO test odoo.addons.base.models.ir_cron: Starting job `Snailmail: process letters queue`. 
+2021-09-03 08:27:49,428 1 INFO test odoo.addons.base.models.ir_cron: Job `Snailmail: process letters queue` done. 
+2021-09-03 08:27:49,432 1 INFO test odoo.addons.base.models.ir_cron: Starting job `Partner Autocomplete : Sync with remote DB`. 
+2021-09-03 08:27:49,505 1 INFO test odoo.addons.base.models.ir_cron: Job `Partner Autocomplete : Sync with remote DB` done. 
+2021-09-03 08:28:22,404 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:28:22] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.005 50.066
+2021-09-03 08:28:49,572 1 INFO test odoo.addons.base.models.ir_cron: Starting job `Post process payment transactions`. 
+2021-09-03 08:28:49,687 1 INFO test odoo.addons.base.models.ir_cron: Job `Post process payment transactions` done. 
+2021-09-03 08:29:12,764 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:29:12] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.005 50.339
+2021-09-03 08:30:02,881 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:30:02] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.006 50.095
+2021-09-03 08:30:53,000 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:30:52] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.006 50.098
+2021-09-03 08:31:43,119 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:31:43] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.005 50.099
+2021-09-03 08:32:33,238 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:32:33] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.005 50.101
+2021-09-03 08:33:23,358 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:33:23] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.005 50.101
+2021-09-03 08:34:13,510 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:34:13] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.005 50.132
+2021-09-03 08:35:03,619 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:35:03] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.007 50.072
+2021-09-03 08:35:53,717 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:35:53] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.008 50.071
+2021-09-03 08:36:44,026 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:36:44] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.006 50.285
+2021-09-03 08:37:34,199 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:37:34] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.014 50.133
+2021-09-03 08:38:25,324 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:38:25] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.008 50.531
+2021-09-03 08:38:50,329 1 INFO test odoo.addons.base.models.ir_cron: Starting job `Post process payment transactions`. 
+2021-09-03 08:38:50,438 1 INFO test odoo.addons.base.models.ir_cron: Job `Post process payment transactions` done. 
+2021-09-03 08:39:00,754 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:39:00] "POST /web/dataset/search_read HTTP/1.1" 200 - 5 0.006 0.013
+2021-09-03 08:39:02,438 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:39:02] "POST /web/dataset/call_kw/hospital.appointment/read HTTP/1.1" 200 - 14 0.020 0.042
+2021-09-03 08:39:15,092 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:39:15] "POST /web/dataset/search_read HTTP/1.1" 200 - 3 0.003 0.009
+2021-09-03 08:39:15,484 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:39:15] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.005 50.140
+2021-09-03 08:39:16,087 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:39:16] "POST /web/dataset/call_kw/hospital.patient/default_get HTTP/1.1" 200 - 2 0.004 0.023
+2021-09-03 08:39:16,253 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:39:16] "POST /web/dataset/call_kw/hospital.patient/onchange HTTP/1.1" 200 - 1 0.001 0.026
+2021-09-03 08:39:16,612 1 INFO ? werkzeug: 172.18.0.1 - - [03/Sep/2021 08:39:16] "GET /web/static/src/img/placeholder.png HTTP/1.1" 200 - - - -
+2021-09-03 08:39:24,481 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:39:24] "POST /web/dataset/call_kw/hospital.patient/onchange HTTP/1.1" 200 - 1 0.001 0.030
+2021-09-03 08:39:24,867 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:39:24] "POST /web/dataset/call_kw/hospital.patient/create HTTP/1.1" 200 - 29 0.061 0.250
+2021-09-03 08:39:25,019 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:39:25] "POST /web/dataset/call_kw/hospital.patient/read HTTP/1.1" 200 - 12 0.031 0.054
+2021-09-03 08:39:25,178 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:39:25] "POST /mail/read_followers HTTP/1.1" 200 - 8 0.013 0.059
+2021-09-03 08:39:25,421 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:39:25] "POST /web/dataset/call_kw/mail.message/message_format HTTP/1.1" 200 - 22 0.110 0.200
+2021-09-03 08:39:26,725 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:39:26] "POST /web/dataset/search_read HTTP/1.1" 200 - 5 0.006 0.012
+2021-09-03 08:39:27,898 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:39:27] "POST /web/dataset/call_kw/hospital.appointment/read HTTP/1.1" 200 - 14 0.021 0.040
+2021-09-03 08:39:28,007 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:39:28] "POST /mail/read_followers HTTP/1.1" 200 - 8 0.011 0.039
+2021-09-03 08:39:29,379 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:39:29] "POST /web/dataset/call_kw/hospital.patient/name_search HTTP/1.1" 200 - 3 0.004 0.012
+2021-09-03 08:39:30,149 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:39:30] "POST /web/dataset/call_kw/hospital.appointment/onchange HTTP/1.1" 200 - 2 0.003 0.020
+2021-09-03 08:40:05,833 1 INFO test werkzeug: 172.18.0.1 - - [03/Sep/2021 08:40:05] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.008 50.301

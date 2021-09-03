@@ -1,0 +1,3 @@
+test add "test-push.xml"
+commit -m "add test"
+push addons main
