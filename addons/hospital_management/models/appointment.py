@@ -23,6 +23,7 @@ class HospitalAppointment(models.Model):
     appointment_seq = fields.Char(string='Appointment ID', index=True, required=True, readOnly=True,
                                   copy=False, translate=True, default=lambda self: _('New'))
     patient_id = fields.Many2one('hospital.patient', string="Patient", required=True)
+    patient_age = fields.Integer(related="patient_id.patient_age", string="Age")
     doctor_id = fields.Many2one('hospital.doctor', string="Doctor", required=True)
     note = fields.Text(string='Registration Note', track_visibility='always')
     appointment_date = fields.Datetime(string="Date", required=True)
